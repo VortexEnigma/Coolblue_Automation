@@ -1,0 +1,8 @@
+{
+  "Search_engine_choice": {
+    "confirm_search_engine": "/html/body/search-engine-choice-app//div[2]/cr-button/div"
+  },
+  "Home_page": {
+    "accept_cookies_button": "/html/body/div[1]/div[1]/div[2]/div/div/div/div[1]/form/div[3]/div/div[1]/button"
+  }
+}
