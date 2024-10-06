@@ -1,10 +1,9 @@
-from time import sleep
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import json
+from datetime import datetime
 
 class Browser:
     def __init__(self):
@@ -35,6 +34,28 @@ class Browser:
         for language_option in language_options:
             if language_option.text == required_language:
                 language_option.click()
+
+
+    def selecting_intro_year(self):
+        possible_year_options = []
+
+        for subtract_year in range(0,4):
+            possible_year_options.append(datetime.now().year - subtract_year)
+
+        users_wanted_intro_year = None
+
+        while users_wanted_intro_year not in possible_year_options:
+
+            users_wanted_intro_year = int(input(f"Required introduction year (Possible options = {possible_year_options}): "))
+
+            if users_wanted_intro_year not in possible_year_options:
+                print("Wrong input, try again")
+
+            '''
+            current_year = datetime.now().year
+            if current_year is not available:
+            current_year -= 1
+            '''
 
     def select_category_dropdown(self):
         self.find_element_by_xpath(self.xpath["Coolblue_Website"]["dropdown_phones"]).click()

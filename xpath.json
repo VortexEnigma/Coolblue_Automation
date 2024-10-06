@@ -21,6 +21,8 @@
     "add_to_favorites_button":
     "/html/body/main/div[3]/div[2]/div[2]/div[2]/div/div/div/div[3]/div[1]/div/div/div/div[2]/div/button[2]",
     "product_container":
-    "/html/body/main/div[3]/div[1]/div/div[2]/div[2]/div/div/div[2]"
+    "/html/body/main/div[3]/div[1]/div/div[2]/div[2]/div/div/div[2]",
+    "introduction_year_container":
+    "/html/body/main/div[3]/div[1]/div/div[1]/div[2]/div[2]/form/div/div[4]/fieldset/div/div/div"
   }
 }
